@@ -67,7 +67,9 @@ const InternshipCard = ({
         <div className="flex items-center justify-between">
           <span className="text-xs text-muted-foreground">{datePosted}</span>
           <Button size="sm" className="bg-primary hover:bg-primary/90">
-            Apply Now
+              <a href={url} target="_blank" rel="noopener noreferrer">
+            Apply 
+          </a>
             <ExternalLink className="ml-1 h-3 w-3" />
           </Button>
         </div>

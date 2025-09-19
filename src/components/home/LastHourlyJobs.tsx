@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, DollarSign, Bookmark, ExternalLink } from "lucide-react";
 
-const FeaturedJobs = () => {
+const LastHorlyJobs = () => {
   const featuredJobs = [
     {
       id: 1,
@@ -84,15 +84,29 @@ const FeaturedJobs = () => {
       featured: false,
     },
   ];
+type HourlyJobsProps = {
+  title: string;
+  organization: string;
+  location: string;
+  employmentType: string;
+  datePosted: string;
+  url: string;
+  featured?: boolean;
+  remote?: boolean;
+};
 
-
+const GetLastHourlyJobs=async()=>{
+    const data= await fetch("https://linkedin-job-search-api.p.rapidapi.com/active-jb-1h?offset=0&description_type=text");
+    const json=data.json();
+    console.log(json);
+}
 
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Featured Jobs</h2>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Most applied</h2>
           <p className="text-lg text-muted-foreground">
             Hand-picked opportunities from top companies
           </p>
@@ -106,7 +120,7 @@ const FeaturedJobs = () => {
             >
               {job.featured && (
                 <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                  Featured
+                  High Paying
                 </div>
               )}
               
@@ -185,4 +199,4 @@ const FeaturedJobs = () => {
   );
 };
 
-export default FeaturedJobs;
+export default LastHorlyJobs;

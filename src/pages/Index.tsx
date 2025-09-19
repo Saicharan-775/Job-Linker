@@ -4,6 +4,7 @@ import FeaturedJobs from "@/components/home/FeaturedJobs";
 import FeaturedCompanies from "@/components/home/FeaturedCompanies";
 import Footer from "@/components/layout/Footer";
 import FeaturedInternship from "@/components/home/internship/FeaturedInternship";
+import LastHorlyJobs from "@/components/home/LastHourlyJobs";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <FeaturedInternship/>
         <FeaturedJobs />
         <FeaturedCompanies />
+       <LastHorlyJobs/>
         
       </main>
       <Footer />

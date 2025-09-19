@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import Jobs from "./pages/Jobs";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
-
 const queryClient = new QueryClient();
 
 const App = () => (

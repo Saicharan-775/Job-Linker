@@ -5,3 +5,4 @@
 		'x-rapidapi-host': 'internships-api.p.rapidapi.com'
 	}
 };
+
