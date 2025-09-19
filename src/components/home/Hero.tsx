@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
   const popularSearches = ["React Developer", "Product Manager", "Data Scientist", "UX Designer", "DevOps Engineer"];
-  
   const stats = [
     { icon: Briefcase, label: "Active Jobs", value: "50,000+" },
     { icon: TrendingUp, label: "Success Rate", value: "94%" },
