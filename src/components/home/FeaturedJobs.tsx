@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, DollarSign, Bookmark, ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedJobs = () => {
+  const navigate=useNavigate();
   const featuredJobs = [
     {
       id: 1,
@@ -176,9 +178,14 @@ const FeaturedJobs = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button size="lg" variant="outline" className="border-border hover:bg-background-secondary">
-            View All Jobs
-          </Button>
+          <Button
+  size="lg"
+  variant="outline"
+  className="border-border hover:bg-background-secondary"
+  onClick={() => navigate("/jobs")}
+>
+  View All Jobs
+</Button>
         </div>
       </div>
     </section>

@@ -106,7 +106,7 @@ const GetLastHourlyJobs=async()=>{
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Most applied</h2>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Personalized For You</h2>
           <p className="text-lg text-muted-foreground">
             Hand-picked opportunities from top companies
           </p>

@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
           
           {/* Search Form */}
-          <div className="mx-auto mb-8 max-w-2xl">
+          <div className="mx-auto mb-8 max-w-4xl">
             <div className="flex flex-col gap-4 rounded-xl bg-background-secondary/50 p-6 backdrop-blur-sm border border-border/50 sm:flex-row">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -50,7 +50,7 @@ const Hero = () => {
                 />
               </div>
               <div className="relative flex-1">
-                <MapPin className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <MapPin className="absolute left-3 top-1/2 h-4 w-6 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   placeholder="City, state, or remote"
                   className="pl-10 bg-background border-border"
@@ -58,6 +58,9 @@ const Hero = () => {
               </div>
               <Button size="lg" className="bg-primary hover:bg-primary/90 px-8">
                 Search Jobs
+              </Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 px-8">
+               Upload Resume
               </Button>
             </div>
           </div>
