@@ -56,9 +56,12 @@ const Hero = () => {
                   className="pl-10 bg-background border-border"
                 />
               </div>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 px-8">
+              <Button size="lg" className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
                 Search Jobs
               </Button>
+              <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+  Upload Resume
+</button>
             </div>
           </div>
           
