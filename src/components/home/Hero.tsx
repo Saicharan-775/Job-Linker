@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, MapPin, Briefcase, TrendingUp } from "lucide-react";
+import { Search, MapPin, Briefcase, TrendingUp, LogIn } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Jobs from "@/pages/Jobs";
 
 const Hero = () => {
   const popularSearches = ["React Developer", "Product Manager", "Data Scientist", "UX Designer", "DevOps Engineer"];
@@ -56,12 +57,17 @@ const Hero = () => {
                   className="pl-10 bg-background border-border"
                 />
               </div>
-              <Button size="lg" className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+              {/* <Button size="lg" className="bg-primary hover:bg-primary/90 px-8">
                 Search Jobs
-              </Button>
+              </Button> */}
               <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-  Upload Resume
-</button>
+             
+                Search Jobs 
+              </button>
+                            <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                Upload Resume
+              </button>
+
             </div>
           </div>
           
